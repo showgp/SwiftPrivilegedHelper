@@ -19,7 +19,7 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
     // MARK: Private Variables
 
     private var connections = [NSXPCConnection]()
-    private var shouldQuit = false
+//    private var shouldQuit = false
     private var shouldQuitCheckInterval = 1.0
 
     // MARK: -
@@ -37,9 +37,10 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
         // Keep the helper tool running until the variable shouldQuit is set to true.
         // The variable should be changed in the "listener(_ listener:shoudlAcceptNewConnection:)" function.
 
-        while !self.shouldQuit {
-            RunLoop.current.run(until: Date(timeIntervalSinceNow: self.shouldQuitCheckInterval))
-        }
+//        while !self.shouldQuit {
+//            RunLoop.current.run(until: Date(timeIntervalSinceNow: self.shouldQuitCheckInterval))
+//        }
+        RunLoop.current.run()
     }
 
     // MARK: -
@@ -66,7 +67,8 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
             }
 
             if self.connections.isEmpty {
-                self.shouldQuit = true
+                exit(0)
+//                self.shouldQuit = true
             }
         }
 

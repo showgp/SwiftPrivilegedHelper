@@ -110,10 +110,9 @@
 		53604BFA215E12F300071149 = {
 			isa = PBXGroup;
 			children = (
+				7175B5F925222886001A60EA /* Share */,
 				53604C05215E12F300071149 /* SwiftPrivilegedHelperApplication */,
 				53604C19215E131E00071149 /* SwiftPrivilegedHelper */,
-				53C6B95B2167621D001A80FD /* Extensions */,
-				53C6B95C21676229001A80FD /* Utility */,
 				532308F12163908D00A456CF /* Scripts */,
 				53604C04215E12F300071149 /* Products */,
 			);
@@ -132,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				53604C06215E12F300071149 /* AppDelegate.swift */,
-				53604C29215E1B0100071149 /* AppProtocol.swift */,
+				532308F92163A87600A456CF /* ExtensionsNSTextView.swift */,
 				53604C08215E12F400071149 /* Assets.xcassets */,
 				53604C0A215E12F400071149 /* MainMenu.xib */,
 				53604C0D215E12F400071149 /* Info.plist */,
@@ -145,30 +144,23 @@
 			children = (
 				53604C1A215E131E00071149 /* main.swift */,
 				53604C1F215E134500071149 /* Helper.swift */,
-				53EE3964215E3A85007310F5 /* HelperAuthorizationRight.swift */,
-				53EE3960215E3068007310F5 /* HelperAuthorization.swift */,
-				53604C21215E13E200071149 /* HelperConstants.swift */,
-				53604C25215E185D00071149 /* HelperProtocol.swift */,
+				53C6B95921676219001A80FD /* CodesignCheck.swift */,
 				53604C23215E14C900071149 /* Helper-Info.plist */,
 				53604C24215E150C00071149 /* Helper-Launchd.plist */,
 			);
 			path = SwiftPrivilegedHelper;
 			sourceTree = "<group>";
 		};
-		53C6B95B2167621D001A80FD /* Extensions */ = {
+		7175B5F925222886001A60EA /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				532308F92163A87600A456CF /* ExtensionsNSTextView.swift */,
+				53604C25215E185D00071149 /* HelperProtocol.swift */,
+				53604C21215E13E200071149 /* HelperConstants.swift */,
+				53EE3960215E3068007310F5 /* HelperAuthorization.swift */,
+				53EE3964215E3A85007310F5 /* HelperAuthorizationRight.swift */,
+				53604C29215E1B0100071149 /* AppProtocol.swift */,
 			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		53C6B95C21676229001A80FD /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				53C6B95921676219001A80FD /* CodesignCheck.swift */,
-			);
-			path = Utility;
+			name = Share;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
